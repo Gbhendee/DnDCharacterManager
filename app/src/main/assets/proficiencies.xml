@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proficiencies>
+	<proficiency>Strength Saving Throws</proficiency>
+	<proficiency>Athletics</proficiency>
+	<proficiency>Dexterity Saving Throws</proficiency>
+	<proficiency>Acrobatics</proficiency>
+	<proficiency>Sleight of Hand</proficiency>
+	<proficiency>Stealth</proficiency>
+	<proficiency>Constitution Saving Throws</proficiency>
+	<proficiency>Intelligence Saving Throws</proficiency>
+	<proficiency>Arcana</proficiency>
+	<proficiency>History</proficiency>
+	<proficiency>Investigation</proficiency>
+	<proficiency>Nature</proficiency>
+	<proficiency>Religion</proficiency>
+	<proficiency>Wisdom Saving Throws</proficiency>
+	<proficiency>Animal Handling</proficiency>
+	<proficiency>Insight</proficiency>
+	<proficiency>Medicine</proficiency>
+	<proficiency>Perception</proficiency>
+	<proficiency>Survival</proficiency>
+	<proficiency>Charisma Saving Throws</proficiency>
+	<proficiency>Deception</proficiency>
+	<proficiency>Intimidation</proficiency>
+	<proficiency>Performance</proficiency>
+	<proficiency>Persuasion</proficiency>
+</proficiencies>

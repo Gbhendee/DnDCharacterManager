@@ -1,0 +1,67 @@
+<ScrollView android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dip">
+        <TextView android:id="@+id/createcharacterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Character Name:" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+        <TextView android:id="@+id/createcharactergenderselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a gender:" />
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:entries="@array/genders" />
+        <TextView android:id="@+id/createcharacterraceselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a race:" />
+        <Spinner
+            android:id="@+id/races"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:entries="@array/races" />
+        <TextView android:id="@+id/createcharactersubraceselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a subrace:" />
+        <Spinner
+            android:id="@+id/subraces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+        <Button
+            android:id="@+id/createcharacter1complete"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Next" />
+        <TextView android:id="@+id/createcharacterinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Race info:" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#696969" />
+        <TextView android:id="@+id/createcharacterracetraits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
