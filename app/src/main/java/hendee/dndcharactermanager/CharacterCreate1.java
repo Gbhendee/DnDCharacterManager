@@ -7,10 +7,10 @@ import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.FragmentManager;
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.View;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -32,7 +32,7 @@ public class CharacterCreate1 extends FragmentActivity {
     protected TextView features;
     protected List<String> charLanguages;
     protected List<String> charTraits;
-    android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
+    androidx.fragment.app.FragmentManager fm = getSupportFragmentManager();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)  {
