@@ -6,6 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/retro_text</item>
+        <item name="android:fontFamily">@font/press_start_2p</item>
+        <item name="buttonStyle">@style/RetroButtonStyle</item>
+    </style>
+
+    <style name="RetroButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/retro_button</item>
+        <item name="android:textColor">@color/retro_text</item>
+        <item name="android:fontFamily">@font/press_start_2p</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

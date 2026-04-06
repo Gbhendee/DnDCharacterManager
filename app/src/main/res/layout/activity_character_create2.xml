@@ -29,7 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rolled Scores: "
-            android:textSize="16sp"
+            android:textColor="@color/retro_green"
+            android:textSize="24sp"
             android:layout_marginBottom="24dp"/>
 
         <TextView
