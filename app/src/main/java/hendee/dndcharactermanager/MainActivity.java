@@ -9,8 +9,16 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ListView lvCharacters;
+    private TextView tvEmpty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +34,37 @@ public class MainActivity extends AppCompatActivity {
                     Create();
                 }
             });
+
+        lvCharacters = findViewById(R.id.lv_characters);
+        tvEmpty = findViewById(R.id.tv_empty);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadCharacters();
+    }
+
+    private void loadCharacters() {
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+        List<character> characters = dbHelper.getAllCharacters();
+
+        if (characters.isEmpty()) {
+            lvCharacters.setVisibility(View.GONE);
+            tvEmpty.setVisibility(View.VISIBLE);
+        } else {
+            lvCharacters.setVisibility(View.VISIBLE);
+            tvEmpty.setVisibility(View.GONE);
+
+            List<String> displayList = new ArrayList<>();
+            for (character c : characters) {
+                displayList.add(c.name + " - " + c.race + " " + c.characterClass + " (Level 1)\n" +
+                                "HP: " + c.maxHP + " | Skills: " + c.availableSkillPoints);
+            }
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, displayList);
+            lvCharacters.setAdapter(adapter);
+        }
     }
 
     public void Create()

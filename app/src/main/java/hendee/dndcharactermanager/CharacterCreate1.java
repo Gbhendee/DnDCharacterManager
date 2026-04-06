@@ -102,8 +102,9 @@ public class CharacterCreate1 extends FragmentActivity {
                     newChar.languages = charLanguages;
                     newChar.traits = charTraits;
                     AddRacialBonuses(newChar);
-                    //Intent i = new Intent(getApplicationContext(), CharacterCreate2.class);
-                    //startActivity(i);
+                    Intent i = new Intent(getApplicationContext(), CharacterCreate2.class);
+                    i.putExtra("character", newChar);
+                    startActivity(i);
                 }
             }
         });
