@@ -40,5 +40,8 @@ public class character implements Serializable {
     public int cha;
     public int armorClass;
     public int passiveWis;
+    public int availableSkillPoints;
+    public int maxHP;
+    public long id;
 }
 

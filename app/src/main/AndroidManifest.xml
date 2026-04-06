@@ -22,6 +22,12 @@
         <activity android:name=".CharacterCreate1"
             android:label="Create Character"
             android:exported="false"></activity>
+        <activity android:name=".CharacterCreate2"
+            android:label="Assign Ability Scores"
+            android:exported="false"></activity>
+        <activity android:name=".CharacterCreate3"
+            android:label="Select Class"
+            android:exported="false"></activity>
     </application>
 
 </manifest>

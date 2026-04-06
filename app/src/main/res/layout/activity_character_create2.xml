@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Base Ability Scores (4d6 drop lowest)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_roll_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll All"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_rolled_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rolled Scores: "
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Scores to Stats:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="STR"/>
+            <Spinner android:id="@+id/spin_str" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="DEX"/>
+            <Spinner android:id="@+id/spin_dex" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="CON"/>
+            <Spinner android:id="@+id/spin_con" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="INT"/>
+            <Spinner android:id="@+id/spin_int" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="WIS"/>
+            <Spinner android:id="@+id/spin_wis" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:text="CHA"/>
+            <Spinner android:id="@+id/spin_cha" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next_step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Next"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
